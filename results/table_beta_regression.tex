@@ -1,0 +1,41 @@
+\begin{table}[!ht]
+\begin{adjustwidth}{-2.25in}{0in}
+\centering
+\caption{\textbf{Beta regression results for attention concentration.}}
+\begin{tabular}{lcccc}
+\hline
+& \multicolumn{2}{c}{\textbf{Outgoing}} & \multicolumn{2}{c}{\textbf{Incoming}} \\
+\cline{2-3} \cline{4-5}
+& \textbf{Love} & \textbf{Hate} & \textbf{Love} & \textbf{Hate} \\
+\hline
+\textbf{Structural Factors} & & & & \\
+Stadium Capacity & 0.22 (0.20) & -0.11 (0.22) & 0.05 (0.20) & -0.65^{***} (0.19) \\
+Club Age & -0.05 (0.11) & 0.09 (0.13) & -0.02 (0.11) & -0.25^* (0.10) \\
+Market Value & -0.28 (0.26) & -0.22 (0.29) & -0.22 (0.26) & -0.13 (0.24) \\
+Members (log) & 0.28 (0.19) & 0.39^\dagger (0.21) & -0.27 (0.19) & 0.26 (0.17) \\
+& & & & \\
+\textbf{Geographic Factors} & & & & \\
+GDP per Capita & 0.03 (0.13) & 0.38^{**} (0.14) & -0.09 (0.12) & -0.21^\dagger (0.12) \\
+Unemployment Rate & -0.15 (0.14) & 0.08 (0.15) & -0.06 (0.14) & -0.36^{**} (0.14) \\
+& & & & \\
+\textbf{Historical/Political} & & & & \\
+East Germany & 0.21 (0.54) & 0.08 (0.61) & -1.80^{***} (0.55) & 0.35 (0.51) \\
+AfD Vote Share & 0.25 (0.17) & 0.36^\dagger (0.19) & 0.56^{***} (0.17) & -0.21 (0.15) \\
+& & & & \\
+\textbf{League Tier (ref: Bundesliga)} & & & & \\
+2nd Division & 1.10^{**} (0.37) & 0.20 (0.41) & 0.11 (0.38) & 0.03 (0.35) \\
+3rd Division & 0.02 (0.49) & -0.89 (0.55) & -0.02 (0.49) & -0.54 (0.46) \\
+Regional & 0.52 (0.58) & 0.32 (0.64) & 0.67 (0.58) & 0.24 (0.55) \\
+& & & & \\
+Pseudo $R^2$ & 0.35 & 0.14 & 0.47 & 0.49 \\
+Log-likelihood & 49.64 & 41.11 & 39.98 & 36.33 \\
+N & 71 & 71 & 71 & 71 \\
+\hline
+\end{tabular}
+\begin{flushleft}
+Table notes: Coefficients from beta regression models with logit link shown with standard errors in parentheses. $^\dagger p < 0.10$, $^* p < 0.05$, $^{**} p < 0.01$, $^{***} p < 0.001$. Eight clubs were excluded due to insufficient data for HHI calculation.
+\end{flushleft}
+\label{table1}
+\end{adjustwidth}
+\end{table}
+
