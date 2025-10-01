@@ -1,22 +1,20 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 # Replication Package: "Concentrated Hate and Diffused Love"\
+Replication Package: "Negative emotions concentrate while positive emotions diffuse in football fan rivalries"
 \
 ## Citation\
-"Concentrated Hate and Diffused Love: Attention Distribution in Competitive Fields." Under review. [Author information withheld for peer review]\
+"Negative emotions concentrate while positive emotions diffuse in football fan rivalries." Under review. [Author information withheld for peer review]\
 \
 ## Abstract\
-How do communities distribute emotional attention across competing targets? Using survey data from 36,223 German football (soccer) fans, this study measures the concentration of positive and negative affect across rivals and allies. We find that negative affect is systematically more concentrated than positive affect, both in outgoing and incoming ties. Club attributes predict incoming but not outgoing concentration, revealing different mechanisms for attention allocation versus attraction. These patterns demonstrate that communities organize emotional attention through distinct distributional logics, revealing distinct logics of conflict and coalition in competitive fields. Results are robust across alternative concentration measures (Gini coefficient, Shannon entropy, top-3 concentration) and fan subgroups.\
+Background: Research on negativity bias demonstrates that negative information receives disproportionate cognitive attention at the individual level, but how this psychological mechanism shapes collective emotional patterns remains unclear. We investigate whether communities systematically concentrate negative emotions on fewer targets while distributing positive emotions more broadly.
+
+Methods: We analyze 36,223 German football fans' reports of loved and hated clubs, measuring attention concentration using the Herfindahl-Hirschman Index (HHI). We distinguish between outgoing concentration (how communities allocate their own attention) and incoming concentration (how attention from others focuses on particular targets), testing whether concentration differs between positive and negative affect.
+
+Results: Negative attention was significantly more concentrated than positive attention for both outgoing (M=0.36 vs M=0.23, p$<$0.001) and incoming ties (M=0.41 vs M=0.33, p=0.011). Love and hate concentration are weakly correlated (r=0.26--0.32), indicating independent processes. Structural factors predict incoming but not outgoing concentration (Pseudo $R^2$=0.14--0.35 vs $R^2$=0.47--0.49), revealing asymmetric mechanisms of attention allocation versus attraction.
+
+Conclusions: Communities face cognitive constraints that produce systematic asymmetries in how they distribute emotional attention. These findings highlight how cognitive constraints shape collective emotional structures, with implications for political polarization, consumer behavior, and conflict dynamics.
 \
 ## Requirements\
 - R version 4.0.0 or higher\
 - Required packages: tidyverse, readxl, igraph, betareg, broom, effsize, ineq, patchwork, fuzzyjoin, ggrepel\
-- Runtime: approximately 5-10 minutes\
 \
 ## Instructions\
 1. Download all files maintaining the folder structure\
