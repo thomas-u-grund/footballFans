@@ -1,7 +1,7 @@
 Replication Package: "Negative emotions concentrate while positive emotions diffuse in football fan rivalries"
 
 ## Citation
-"Negative emotions concentrate while positive emotions diffuse in football fan rivalries." Under review. [Author information withheld for peer review]\
+"Negative emotions concentrate while positive emotions diffuse in football fan rivalries." Under review. Thomas U. Grund, RWTH Aachen University
 
 ## Abstract
 Background: Research on negativity bias demonstrates that negative information receives disproportionate cognitive attention at the individual level, but how this psychological mechanism shapes collective emotional patterns remains unclear. We investigate whether communities systematically concentrate negative emotions on fewer targets while distributing positive emotions more broadly.
@@ -13,59 +13,59 @@ Results: Negative attention was significantly more concentrated than positive at
 Conclusions: Communities face cognitive constraints that produce systematic asymmetries in how they distribute emotional attention. These findings highlight how cognitive constraints shape collective emotional structures, with implications for political polarization, consumer behavior, and conflict dynamics.
 
 ## Requirements
-- R version 4.0.0 or higher\
-- Required packages: tidyverse, readxl, igraph, betareg, broom, effsize, ineq, patchwork, fuzzyjoin, ggrepel\
+- R version 4.0.0 or higher 
+- Required packages: tidyverse, readxl, igraph, betareg, broom, effsize, ineq, patchwork, fuzzyjoin, ggrepel
 
 ## Instructions
-1. Download all files maintaining the folder structure\
-2. Set working directory to package root\
-3. Ensure all required packages are installed\
-4. Run: `source("code/replication_script.R")`\
-5. All outputs will be saved to figures/ and results/ folders\
+1. Download all files maintaining the folder structure 
+2. Set working directory to package root 
+3. Ensure all required packages are installed 
+4. Run: `source("code/replication_script.R")` 
+5. All outputs will be saved to figures/ and results/ folders 
 
 ## File Structure
 
 ### Data Files (`data/` folder)
-- **`hate_network.csv`** - Aggregated hate relationship matrix between football clubs. Rows represent source clubs, columns represent target clubs, values indicate weighted nomination counts from fan survey\
-- **`love_network.csv`** - Aggregated love relationship matrix between football clubs. Same structure as hate network but for positive relationships\
-- **`clubs_master.csv`** - Club attributes including geographic location, league tier, stadium capacity, membership numbers, founding year, and regional characteristics\
-- **`market_values.xlsx`** - Player market valuations from Transfermarkt for 2018 season, used as proxy for club competitive status\
+- **`hate_network.csv`** - Aggregated hate relationship matrix between football clubs. Rows represent source clubs, columns represent target clubs, values indicate weighted nomination counts from fan survey 
+- **`love_network.csv`** - Aggregated love relationship matrix between football clubs. Same structure as hate network but for positive relationships 
+- **`clubs_master.csv`** - Club attributes including geographic location, league tier, stadium capacity, membership numbers, founding year, and regional characteristics 
+- **`market_values.xlsx`** - Player market valuations from Transfermarkt for 2018 season, used as proxy for club competitive status 
 
 ### Code (`code/` folder)
-- **`replication_script.R`** - Complete replication script that reproduces all analyses, figures, and tables from the paper. Includes data loading, network construction, HHI calculations, statistical tests, beta regression models, and robustness checks\
+- **`replication_script.R`** - Complete replication script that reproduces all analyses, figures, and tables from the paper. Includes data loading, network construction, HHI calculations, statistical tests, beta regression models, and robustness checks 
 
 ### Output Folders (created by script)
-- **`figures/`** - Contains all figures from the paper:\
- - `figure_1_hhi_boxplots.png` - Main concentration asymmetry visualization\
- - `figure_2_correlations.png` - Love vs hate concentration correlations\
-- **`results/`** - Contains analysis outputs:\
- - `hhi_concentration_results.csv` - HHI measures for all clubs\
- - `analysis_dataset.csv` - Complete merged dataset used in regressions\
- - `beta_models.RData` - Saved beta regression model objects\
- - `summary_statistics.rds` - Key statistical results and effect sizes\
+- **`figures/`** - Contains all figures from the paper: 
+ - `figure_1_hhi_boxplots.png` - Main concentration asymmetry visualization 
+ - `figure_2_correlations.png` - Love vs hate concentration correlations 
+- **`results/`** - Contains analysis outputs: 
+ - `hhi_concentration_results.csv` - HHI measures for all clubs 
+ - `analysis_dataset.csv` - Complete merged dataset used in regressions 
+ - `beta_models.RData` - Saved beta regression model objects 
+ - `summary_statistics.rds` - Key statistical results and effect sizes 
 
 ### Documentation
-- **`README.md`** - This file with package overview and instructions\
+- **`README.md`** - This file with package overview and instructions 
 
 ## Key Variables
-- **HHI measures**: Normalized Herfindahl-Hirschman Index values (0-1 scale) measuring attention concentration\
-- **Outgoing ties**: How each club's fanbase distributes its own attention\
-- **Incoming ties**: How attention from all other clubs focuses on each target club\
-- **Club attributes**: League tier, market value, stadium capacity, geographic and political variables\
+- **HHI measures**: Normalized Herfindahl-Hirschman Index values (0-1 scale) measuring attention concentration 
+- **Outgoing ties**: How each club's fanbase distributes its own attention 
+- **Incoming ties**: How attention from all other clubs focuses on each target club 
+- **Club attributes**: League tier, market value, stadium capacity, geographic and political variables 
 
 ## Data Sources
-- Fan survey data: Der Spiegel's Fanatlas 2018 (36,223 respondents)\
-- Market valuations: Transfermarkt.com\
-- Regional economic data: German Federal Statistical Office\
-- Electoral data: German Federal Returning Officer\
+- Fan survey data: Der Spiegel's Fanatlas 2018 (36,223 respondents) 
+- Market valuations: Transfermarkt.com 
+- Regional economic data: German Federal Statistical Office 
+- Electoral data: German Federal Returning Officer 
 
 ## Reproducibility Notes
-- Package versions recorded in session info\
-- Runtime may vary based on system specifications\
-- All paths use relative references for cross-platform compatibility\
+- Package versions recorded in session info 
+- Runtime may vary based on system specifications 
+- All paths use relative references for cross-platform compatibility 
 
 ## License
-Creative Commons Attribution 4.0\
+Creative Commons Attribution 4.0 
 
 ## Version History
 - v1.0: Initial replication package for peer review
